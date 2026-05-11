@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/edutrack/static/css/main.4925325b.css",
+    "main.js": "/edutrack/static/js/main.5db08a72.js",
+    "static/js/453.0956c645.chunk.js": "/edutrack/static/js/453.0956c645.chunk.js",
+    "index.html": "/edutrack/index.html",
+    "main.4925325b.css.map": "/edutrack/static/css/main.4925325b.css.map",
+    "main.5db08a72.js.map": "/edutrack/static/js/main.5db08a72.js.map",
+    "453.0956c645.chunk.js.map": "/edutrack/static/js/453.0956c645.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4925325b.css",
+    "static/js/main.5db08a72.js"
+  ]
+}
