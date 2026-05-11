@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
   color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
-.App-link {
-  color: #61dafb;
+/* Main Layout */
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Cards */
+
+.card,
+.topper-card {
+  width: 340px;
+  min-height: 500px;
+  padding: 25px;
+  border-radius: 25px;
+
+  background: rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.card:hover,
+.topper-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Topper */
+
+.topper-card {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: black;
+}
+
+/* Titles */
+
+.card h2,
+.topper-card h2 {
+  margin-bottom: 25px;
+  font-size: 34px;
+}
+
+/* Inputs */
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.2);
+
+  color: white;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: #e5e5e5;
+}
+
+/* Buttons */
+
+button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Student & Book Box */
+
+.student-box {
+  margin-top: 20px;
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.15);
+
+  backdrop-filter: blur(8px);
+
+  transition: 0.3s;
+}
+
+.student-box:hover {
+  transform: scale(1.02);
+}
+
+.student-box h3 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.student-box p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.topper-card {
+  width: 260px;
+  height: fit-content;
+}
+
+.stats-card {
+  width: 220px;
+  padding: 20px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(12px);
+
+  color: white;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.stats-card h2 {
+  margin-bottom: 10px;
+}
+
+.stats-card p {
+  font-size: 35px;
+  font-weight: bold;
 }
